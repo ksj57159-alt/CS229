@@ -1,2 +1,2 @@
 # Study note
-[Part 1-Mathematical Foundation](part1.md)
+[Chapter1 Linear Regression](chap1.md)
