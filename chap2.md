@@ -19,5 +19,7 @@ softmax function은 k개(차원)의 input을 다시 k개(차원)의 output(이�
 Newton's method:
 ---
 f(θ)=0이 되는 지점을 찾고 싶을 때 쓰는 방법
+
 θ := θ-f/f' 이고, 여기에 f 대신 l'(θ)로 생각하면 l'(θ)=0이 되는 지점을 찾는 것과 같다.
+
 따라서 θ :=θ-l'/l''이고, vector valued losgistic regression setting으로 바꾸면 θ := H^(-1)▽l(θ)이다. (H:Hessian)
