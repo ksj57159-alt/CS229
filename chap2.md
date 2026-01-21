@@ -1,1 +1,3 @@
-# Classification and logistic regression
+## Classification and logistic regression
+
+#Logistic Regression:
