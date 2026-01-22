@@ -46,7 +46,7 @@ Naive bayes를 text classification 문제 중 하나인 classifying email 문제
 
 의미를 설명해보면, y(스팸인지 아닌지)를 알면 등장하는 x1은 x7과 독립적이라는 것이다. 수학적으로 엄밀하지 않고, 틀렸지만 결과적으로 horrible하지 않기 때문에 이와 같은 가정을 사용한다.
 
-따라서 p(x1,x2, ... , x10000)=p(x1|y)p(x2|y,x1)p(x3|y,x1,x2)... = p(x1|y)p(x2|y)p(x3|y)... 이다.
+따라서 p(x1,x2, ... , x10000|y)=p(x1|y)p(x2|y,x1)p(x3|y,x1,x2)... = p(x1|y)p(x2|y)p(x3|y)... 이다.
 
 우리는 joint likelihood를 다음과 같이 쓸 수 있다.
 
