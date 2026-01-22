@@ -1,4 +1,5 @@
-# Study note
+# CCS 229 간단한 review note
+
 [Chapter1 Linear Regression](chap1.md)
 
 [Chapter2 Classification and logistic regression](chap2.md)
