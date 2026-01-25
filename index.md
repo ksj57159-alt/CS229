@@ -7,3 +7,7 @@
 [Chapter3 Generalized linear model(GLM)](chap3.md)
 
 [Chapter4 Generative learning algorithms](chap4.md)
+
+[Chapter5 Kernels](chap5.md)
+
+[Chaper6 Support Vector machines](chap6.md)
