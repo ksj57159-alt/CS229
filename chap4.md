@@ -59,3 +59,25 @@ L=products of p(x(i),y(i)) 여기서 product는 각각에 대해 모두 곱하�
 Logistic regression으로도 동일한 분류 문제를 해결할 수 있지만,
 
 MLE를 통해 구한 parameter의 결과가 단순한 counting, 상수들의 곱으로만 이루어져있다는 점에서 굉장히 효율적인 모델임을 알 수 있다.
+
+우리는 new feature x에 대해 y=1인지 아닌지를 예측해야 하므로 최종적으로 p(y=1|x)를 bayes 정리로 표현함으로써 예측 모델 구성을 마무리한다.
+
+Laplace smoothing
+---
+Naive Bayes에서 MLE를 통해 구한 확률은 'y=1 중에서 j 단어가 등장한 비율'과 같이 정의된다. 그런데 j 단어가 등장한 적이 없다면 그 확률은 0이 될 것이다.
+
+통계적으로 봐도, 어떤 확률을 0이라고 단언하는 것은 매우 잘못된 결과를 초래한다는 것을 짐작할 수 있다.
+
+따라서 Laplace smoothing을 사용하는데, 이는 등장한 횟수에 단순히 상수 1을 더해주는 아이디어다. 등장하지 않았더라도 1이 더해지기 때문에 0이 되는 것을 방지할 수 있다.
+
+이는 통계적으로도 최적이라는 것이 검증되었다고 한다.
+
+만약, x={0,1}이 아니라 x={0,1,...,k}라면 분자에는 1을 더하고 분모에는 k를 더한다. 
+
+지금 예시에서는 {0,1}인 binary classification이므로 분자에 1, 분모에 2를 더한다.
+
+Multinomial event model
+---
+앞서 배운 모델은 multi-variate Bernoulli event model이라고 했다면, 이번 모델은 Multinomial event model이다.
+
+이름이 다소 헷갈릴 수 있다. notation의 차이에 집중해야 한다. (자료참조)
